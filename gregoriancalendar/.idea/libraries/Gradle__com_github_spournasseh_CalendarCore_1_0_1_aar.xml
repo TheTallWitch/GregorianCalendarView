@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.spournasseh:CalendarCore:1.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dc1b9407bbbf5036e9e7a46e86e1f954/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/dc1b9407bbbf5036e9e7a46e86e1f954/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.spournasseh/CalendarCore/1.0.1/b5a26b9b1fadd1d1210f1f9efe864a3f6504b873/CalendarCore-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
