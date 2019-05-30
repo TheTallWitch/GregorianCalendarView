@@ -42,50 +42,50 @@ public class GregorianCalendarView extends FrameLayout {
         TypedArray typedArray = context.obtainStyledAttributes(attrs,
                 R.styleable.GregorianCalendarView, 0, 0);
 
-        if(typedArray.hasValue(R.styleable.GregorianCalendarView_pcv_typefacePath)) {
+        if(typedArray.hasValue(R.styleable.GregorianCalendarView_gcv_typefacePath)) {
             Typeface typeface = Typeface.createFromAsset(context.getAssets(),
-                    typedArray.getString(R.styleable.GregorianCalendarView_pcv_typefacePath));
+                    typedArray.getString(R.styleable.GregorianCalendarView_gcv_typefacePath));
             if (typeface != null)
                 mCalendarHandler.setTypeface(typeface);
         }
-        if(typedArray.hasValue(R.styleable.GregorianCalendarView_pcv_headersTypefacePath)) {
+        if(typedArray.hasValue(R.styleable.GregorianCalendarView_gcv_headersTypefacePath)) {
             Typeface typeface = Typeface.createFromAsset(context.getAssets(),
-                    typedArray.getString(R.styleable.GregorianCalendarView_pcv_headersTypefacePath));
+                    typedArray.getString(R.styleable.GregorianCalendarView_gcv_headersTypefacePath));
             if (typeface != null)
                 mCalendarHandler.setHeadersTypeface(typeface);
         }
         mCalendarHandler.setDaysFontSize(typedArray.getDimensionPixelSize(
-                R.styleable.GregorianCalendarView_pcv_fontSize,
+                R.styleable.GregorianCalendarView_gcv_fontSize,
                 25));
         mCalendarHandler.setHeadersFontSize(typedArray.getDimensionPixelSize(
-                R.styleable.GregorianCalendarView_pcv_headersFontSize,
+                R.styleable.GregorianCalendarView_gcv_headersFontSize,
                 20));
         mCalendarHandler.setTodayBackground(typedArray.getResourceId(
-                R.styleable.GregorianCalendarView_pcv_todayBackground,
+                R.styleable.GregorianCalendarView_gcv_todayBackground,
                 mCalendarHandler.getTodayBackground()));
         mCalendarHandler.setSelectedDayBackground(typedArray.getResourceId(
-                R.styleable.GregorianCalendarView_pcv_selectedDayBackground,
+                R.styleable.GregorianCalendarView_gcv_selectedDayBackground,
                 mCalendarHandler.getSelectedDayBackground()));
         mCalendarHandler.setColorDayName(typedArray.getColor(
-                R.styleable.GregorianCalendarView_pcv_colorDayName,
+                R.styleable.GregorianCalendarView_gcv_colorDayName,
                 mCalendarHandler.getColorDayName()));
         mCalendarHandler.setColorBackground(typedArray.getColor(
-                R.styleable.GregorianCalendarView_pcv_colorBackground,
+                R.styleable.GregorianCalendarView_gcv_colorBackground,
                 mCalendarHandler.getColorHolidaySelected()));
         mCalendarHandler.setColorHolidaySelected(typedArray.getColor(
-                R.styleable.GregorianCalendarView_pcv_colorHolidaySelected,
+                R.styleable.GregorianCalendarView_gcv_colorHolidaySelected,
                 mCalendarHandler.getColorHolidaySelected()));
         mCalendarHandler.setColorHoliday(typedArray.getColor(
-                R.styleable.GregorianCalendarView_pcv_colorHoliday,
+                R.styleable.GregorianCalendarView_gcv_colorHoliday,
                 mCalendarHandler.getColorHoliday()));
         mCalendarHandler.setColorNormalDaySelected(typedArray.getColor(
-                R.styleable.GregorianCalendarView_pcv_colorNormalDaySelected,
+                R.styleable.GregorianCalendarView_gcv_colorNormalDaySelected,
                 mCalendarHandler.getColorNormalDaySelected()));
         mCalendarHandler.setColorNormalDay(typedArray.getColor(
-                R.styleable.GregorianCalendarView_pcv_colorNormalDay,
+                R.styleable.GregorianCalendarView_gcv_colorNormalDay,
                 mCalendarHandler.getColorNormalDay()));
         mCalendarHandler.setColorEventUnderline(typedArray.getColor(
-                R.styleable.GregorianCalendarView_pcv_eventUnderlineColor,
+                R.styleable.GregorianCalendarView_gcv_eventUnderlineColor,
                 mCalendarHandler.getColorEventUnderline()));
         try {
             mCalendarFragment = CalendarFragment.class.newInstance();

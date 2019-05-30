@@ -233,6 +233,34 @@ public class GregorianCalendarHandler {
         return this;
     }
 
+    public boolean isHighlightingLocalEvents() {
+        return mHighlightLocalEvents;
+    }
+
+    public boolean isHighlightAfghanistanEvents() {
+        return mHighlightAfghanistanEvents;
+    }
+
+    public boolean isHighlightIranEvents() {
+        return mHighlightIranEvents;
+    }
+
+    public boolean isHighlightAncientEvents() {
+        return mHighlightAncientEvents;
+    }
+
+    public boolean isHighlightIslamicEvents() {
+        return mHighlightIslamicEvents;
+    }
+
+    public boolean isHighlightGregorianEvents() {
+        return mHighlightGregorianEvents;
+    }
+
+    public boolean isHighlightAdEvents() {
+        return mHighlightAdEvents;
+    }
+
     public boolean isHighlightingOfficialEvents() {
         return mHighlightOfficialEvents;
     }
