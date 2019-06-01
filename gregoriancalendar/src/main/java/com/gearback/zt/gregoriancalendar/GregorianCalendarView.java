@@ -38,7 +38,7 @@ public class GregorianCalendarView extends FrameLayout {
 
     private void makeView(Context context, AttributeSet attrs){
         mCalendarHandler = GregorianCalendarHandler.getInstance(context);
-        View view = LayoutInflater.from(context).inflate(R.layout.view_calendar, this, true);
+        View view = LayoutInflater.from(context).inflate(R.layout.gregorian_view, this, true);
         TypedArray typedArray = context.obtainStyledAttributes(attrs,
                 R.styleable.GregorianCalendarView, 0, 0);
 
@@ -97,7 +97,7 @@ public class GregorianCalendarView extends FrameLayout {
         setBackgroundColor(mCalendarHandler.getColorBackground());
         FragmentManager m = ((AppCompatActivity)getContext()).getSupportFragmentManager();
         m.beginTransaction()
-                .replace(R.id.fragment_holder,
+                .replace(R.id.gregorianHolder,
                         mCalendarFragment,
                         CalendarFragment.class.getName())
                 .commit();
